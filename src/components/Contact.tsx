@@ -36,8 +36,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      content: "helloinaya7@gmail.com",
-      href: "mailto:helloinaya7@gmail.com"
+      content: "meghanasingareddy@gmail.com",
+      href: "mailto:meghanasingareddy@gmail.com"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
@@ -73,9 +73,9 @@ const Contact = () => {
       color: "hover:text-yellow-500"
     },
     {
-      name: "Instagram - Fillys",
+      name: "Instagram - Meghana",
       icon: <Instagram className="w-5 h-5" />,
-      href: "https://instagram.com/fillysboutique",
+      href: "https://instagram.com/meghanasingareddy",
       color: "hover:text-pink-500"
     },
     {
