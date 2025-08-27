@@ -53,10 +53,10 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				portfolio: {
-					dark: 'hsl(var(--portfolio-dark))',
+					light: 'hsl(var(--portfolio-light))',
 					accent: 'hsl(var(--portfolio-accent))',
 					cyan: 'hsl(var(--portfolio-cyan))',
-					'text-light': 'hsl(var(--portfolio-text-light))',
+					'text-dark': 'hsl(var(--portfolio-text-dark))',
 					'text-muted': 'hsl(var(--portfolio-text-muted))',
 					card: 'hsl(var(--portfolio-card))',
 					border: 'hsl(var(--portfolio-border))'

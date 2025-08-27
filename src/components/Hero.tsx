@@ -16,12 +16,12 @@ const Hero = () => {
           <div className="animate-fade-in">
             <div className="mb-6">
               <p className="text-portfolio-text-muted text-lg mb-2">helloinaya7@gmail.com</p>
-              <h1 className="text-6xl lg:text-7xl font-bold text-portfolio-text-light leading-tight">
+              <h1 className="text-6xl lg:text-7xl font-bold text-portfolio-text-dark leading-tight">
                 Hi,<br />
                 I'm <span className="text-gradient">Meghana Reddy</span>
               </h1>
               <p className="text-xl text-portfolio-text-muted mt-4">
-                AI/ML Student & Developer
+                Innovating with AI, Web Development & Problem Solving
               </p>
             </div>
             
@@ -36,7 +36,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-portfolio-border text-portfolio-text-light hover:bg-portfolio-card/50"
+                className="border-portfolio-border text-portfolio-text-dark hover:bg-portfolio-card/50"
               >
                 View Portfolio
               </Button>
@@ -50,7 +50,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github className="w-5 h-5 text-portfolio-text-light" />
+                <Github className="w-5 h-5 text-portfolio-text-dark" />
               </a>
               <a 
                 href="https://linkedin.com/in/singareddy-meghana-reddy-030527292" 
@@ -58,7 +58,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Linkedin className="w-5 h-5 text-portfolio-text-light" />
+                <Linkedin className="w-5 h-5 text-portfolio-text-dark" />
               </a>
               <a 
                 href="https://instagram.com/fillysboutique" 
@@ -66,7 +66,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Instagram className="w-5 h-5 text-portfolio-text-light" />
+                <Instagram className="w-5 h-5 text-portfolio-text-dark" />
               </a>
             </div>
 
@@ -95,7 +95,7 @@ const Hero = () => {
             {/* Expertise Badge */}
             <div className="absolute -top-4 -right-4 bg-portfolio-card glass-card rounded-xl p-4">
               <div className="text-sm text-portfolio-accent font-semibold">Expert on</div>
-              <div className="text-portfolio-text-light font-bold">AI & Machine Learning</div>
+              <div className="text-portfolio-text-dark font-bold">AI & Machine Learning</div>
               <div className="text-xs text-portfolio-text-muted mt-1">
                 Based in India<br />
                 I'm developer and<br />
@@ -105,12 +105,12 @@ const Hero = () => {
 
             {/* Info Card */}
             <div className="absolute -bottom-6 left-4 bg-portfolio-card glass-card rounded-xl p-6 max-w-xs">
-              <div className="text-portfolio-text-light font-semibold mb-2">
-                Hey are looking for developer to build your brand and grow your business? let's shake hands with me.
+              <div className="text-portfolio-text-dark font-semibold mb-2">
+                Looking for a developer to build your brand and grow your business? Let's connect!
               </div>
               <Button 
                 size="sm" 
-                className="bg-portfolio-cyan text-portfolio-dark hover:bg-portfolio-cyan/90 mt-3"
+                className="bg-portfolio-cyan text-white hover:bg-portfolio-cyan/90 mt-3"
               >
                 Let's Chat
               </Button>

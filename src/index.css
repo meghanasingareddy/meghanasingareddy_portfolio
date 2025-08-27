@@ -38,14 +38,14 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Custom Portfolio Colors */
-    --portfolio-dark: 225 39% 5%;
-    --portfolio-accent: 0 84% 60%;
+    /* Custom Portfolio Colors - Light Professional Theme */
+    --portfolio-light: 0 0% 100%;
+    --portfolio-accent: 219 100% 61%;
     --portfolio-cyan: 189 94% 61%;
-    --portfolio-text-light: 210 40% 98%;
-    --portfolio-text-muted: 215 20% 65%;
-    --portfolio-card: 224 71% 8%;
-    --portfolio-border: 215 27% 15%;
+    --portfolio-text-dark: 210 40% 8%;
+    --portfolio-text-muted: 210 15% 45%;
+    --portfolio-card: 220 14% 96%;
+    --portfolio-border: 220 13% 91%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -119,7 +119,7 @@ All colors MUST be HSL.
 
 @layer components {
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(var(--portfolio-dark)), hsl(225 39% 8%));
+    background: linear-gradient(135deg, hsl(var(--portfolio-light)), hsl(210 40% 98%));
   }
   
   .text-gradient {
@@ -130,9 +130,10 @@ All colors MUST be HSL.
   }
   
   .glass-card {
-    background: hsl(var(--portfolio-card) / 0.5);
+    background: hsl(var(--portfolio-card) / 0.8);
     backdrop-filter: blur(10px);
     border: 1px solid hsl(var(--portfolio-border));
+    box-shadow: 0 4px 16px hsl(var(--portfolio-accent) / 0.05);
   }
   
   .nav-link {

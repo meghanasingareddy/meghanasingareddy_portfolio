@@ -7,7 +7,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "ExpenseFlow",
-      description: "A comprehensive finance management application built for Google STEP Internship application. Features expense tracking, budget management, and financial insights with intuitive UI/UX design.",
+      description: "A comprehensive finance management application featuring expense tracking, budget management, and financial insights with intuitive UI/UX design.",
       technologies: ["React", "Firebase", "JavaScript", "CSS"],
       category: "Web Application",
       featured: true,
@@ -25,7 +25,7 @@ const Portfolio = () => {
     },
     {
       title: "ChatterBug",
-      description: "Bluetooth-based private chat Android application developed as a group project for SIP. Enables secure local communication without internet dependency using Bluetooth technology.",
+      description: "Bluetooth-based private chat Android application developed as a group project. Enables secure local communication without internet dependency using Bluetooth technology.",
       technologies: ["Android", "Java", "Bluetooth API", "UI/UX"],
       category: "Mobile Application",
       featured: false,
@@ -58,7 +58,7 @@ const Portfolio = () => {
     <section id="portfolio" className="py-20 hero-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-portfolio-text-light mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-portfolio-text-dark mb-6">
             My <span className="text-gradient">Portfolio</span>
           </h2>
           <p className="text-xl text-portfolio-text-muted max-w-2xl mx-auto">
@@ -72,7 +72,7 @@ const Portfolio = () => {
             <Button
               key={category}
               variant="outline"
-              className="border-portfolio-border text-portfolio-text-light hover:bg-portfolio-card/50"
+              className="border-portfolio-border text-portfolio-text-dark hover:bg-portfolio-card/50"
             >
               {category}
             </Button>
