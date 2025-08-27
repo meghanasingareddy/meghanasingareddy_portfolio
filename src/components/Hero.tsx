@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Instagram, ExternalLink } from "lucide-react";
-import meghanPortrait from "@/assets/meghana-portrait.jpg";
+import meghanPortrait from "@/assets/meghana-profile.jpg";
 
 const Hero = () => {
   return (
