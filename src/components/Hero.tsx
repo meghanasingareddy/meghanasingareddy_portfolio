@@ -15,7 +15,7 @@ const Hero = () => {
           {/* Left Content */}
           <div className="animate-fade-in">
             <div className="mb-6">
-              <p className="text-portfolio-text-muted text-lg mb-2">helloinaya7@gmail.com</p>
+              <p className="text-portfolio-text-muted text-lg mb-2">meghanasingareddy@gmail.com</p>
               <h1 className="text-6xl lg:text-7xl font-bold text-portfolio-text-dark leading-tight">
                 Hi,<br />
                 I'm <span className="text-gradient">Meghana Reddy</span>

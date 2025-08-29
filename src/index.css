@@ -38,7 +38,7 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Custom Portfolio Colors - Light Professional Theme */
+    /* Custom Portfolio Colors - Modern Light Theme */
     --portfolio-light: 0 0% 100%;
     --portfolio-accent: 219 100% 61%;
     --portfolio-cyan: 189 94% 61%;
@@ -46,6 +46,10 @@ All colors MUST be HSL.
     --portfolio-text-muted: 210 15% 45%;
     --portfolio-card: 220 14% 96%;
     --portfolio-border: 220 13% 91%;
+    
+    /* Modern gradient backgrounds */
+    --gradient-subtle: linear-gradient(135deg, 0 0% 98%, 210 40% 98%);
+    --gradient-light: linear-gradient(135deg, 220 27% 98%, 210 40% 96%);
 
     --sidebar-background: 0 0% 98%;
 
@@ -109,7 +113,10 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground dark;
+    @apply text-foreground;
+    font-family: 'Inter', sans-serif;
+    background: var(--gradient-subtle);
+    min-height: 100vh;
   }
 
   html {
@@ -119,7 +126,11 @@ All colors MUST be HSL.
 
 @layer components {
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(var(--portfolio-light)), hsl(210 40% 98%));
+    background: var(--gradient-subtle);
+  }
+  
+  .section-gradient {
+    background: var(--gradient-light);
   }
   
   .text-gradient {
