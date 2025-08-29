@@ -141,8 +141,13 @@ All colors MUST be HSL.
   }
   
   .glass-card {
-    background: hsl(var(--portfolio-card) / 0.8);
-    backdrop-filter: blur(10px);
+    /* Fallback for older browsers */
+    background: hsl(var(--portfolio-card));
+    @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+      background: hsl(var(--portfolio-card) / 0.8);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
     border: 1px solid hsl(var(--portfolio-border));
     box-shadow: 0 4px 16px hsl(var(--portfolio-accent) / 0.05);
   }

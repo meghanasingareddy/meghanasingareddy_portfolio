@@ -75,10 +75,10 @@ const Skills = () => {
         {/* Quick Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { number: "50+", label: "LeetCode Problems Solved", icon: "🎯" },
-            { number: "5+", label: "Major Projects Completed", icon: "🚀" },
-            { number: "2+", label: "Years of Learning", icon: "📚" },
-            { number: "10+", label: "Technologies Mastered", icon: "⚡" }
+            { number: "100+", label: "LeetCode Problems Solved", icon: "🎯" },
+            { number: "4+", label: "Major Projects Completed", icon: "🚀" },
+            { number: "1+", label: "Years of Learning", icon: "📚" },
+            { number: "6+", label: "Technologies Mastered", icon: "⚡" }
           ].map((stat, index) => (
             <div key={index} className="text-center p-6 glass-card hover:scale-105 transition-transform">
               <div className="text-2xl mb-2">{stat.icon}</div>

@@ -6,14 +6,6 @@ import { ExternalLink, Github } from "lucide-react";
 const Portfolio = () => {
   const projects = [
     {
-      title: "DataDock",
-      description: "A data management and visualization platform designed to simplify handling of large datasets. Features include secure storage, quick search, and intuitive dashboards for analysis.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
-      category: "Web Application",
-      github: "#",
-      live: "#"
-    },
-    {
       title: "ExpenseFlow",
       description: "A comprehensive finance management application featuring expense tracking, budget management, and financial insights with intuitive UI/UX design.",
       technologies: ["React", "Firebase", "JavaScript", "CSS"],
@@ -34,6 +26,14 @@ const Portfolio = () => {
       description: "Bluetooth-based private chat Android application developed as a group project. Enables secure local communication without internet dependency using Bluetooth technology.",
       technologies: ["Android", "Java", "Bluetooth API", "UI/UX"],
       category: "Mobile Application",
+      github: "#",
+      live: "#"
+    },
+    {
+      title: "DataDock",
+      description: "A data management and visualization platform designed to simplify handling of large datasets. Features include secure storage, quick search, and intuitive dashboards for analysis.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+      category: "Web Application",
       github: "#",
       live: "#"
     },

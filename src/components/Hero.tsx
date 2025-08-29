@@ -45,7 +45,7 @@ const Hero = () => {
             {/* Social Links */}
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/meghanasingareddy" 
                 className="p-3 rounded-lg bg-portfolio-card/30 hover:bg-portfolio-card/50 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const Hero = () => {
                 <Linkedin className="w-5 h-5 text-portfolio-text-dark" />
               </a>
               <a 
-                href="https://instagram.com/fillysboutique" 
+                href="https://instagram.com/meghanasingareddy" 
                 className="p-3 rounded-lg bg-portfolio-card/30 hover:bg-portfolio-card/50 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

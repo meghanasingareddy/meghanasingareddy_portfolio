@@ -63,7 +63,7 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: <Github className="w-5 h-5" />,
-      href: "https://github.com",
+      href: "https://github.com/meghanasingareddy",
       color: "hover:text-gray-400"
     },
     {
@@ -78,12 +78,6 @@ const Contact = () => {
       href: "https://instagram.com/meghanasingareddy",
       color: "hover:text-pink-500"
     },
-    {
-      name: "Instagram - Flash",
-      icon: <Instagram className="w-5 h-5" />,
-      href: "https://instagram.com/flashamour",
-      color: "hover:text-purple-500"
-    }
   ];
 
   return (
@@ -216,11 +210,11 @@ const Contact = () => {
                 <h4 className="text-portfolio-text-light font-semibold mb-4">Quick Stats</h4>
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
-                    <div className="text-2xl font-bold text-gradient">15+</div>
+                    <div className="text-2xl font-bold text-gradient">4+</div>
                     <div className="text-sm text-portfolio-text-muted">Projects Completed</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-gradient">2+</div>
+                    <div className="text-2xl font-bold text-gradient">1+</div>
                     <div className="text-sm text-portfolio-text-muted">Years Learning</div>
                   </div>
                   <div>
@@ -228,7 +222,7 @@ const Contact = () => {
                     <div className="text-sm text-portfolio-text-muted">DSA Problems Solved</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-gradient">5+</div>
+                    <div className="text-2xl font-bold text-gradient">6+</div>
                     <div className="text-sm text-portfolio-text-muted">Tech Stacks</div>
                   </div>
                 </div>

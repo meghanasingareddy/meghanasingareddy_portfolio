@@ -18,7 +18,7 @@ const projectData: Project[] = [
     title: "DataDock (Statathon Project)",
     description: "DataDock is a Statathon project that simplifies dataset analysis with clear visualizations and interactive features.",
     tech: ["Python", "TypeScript", "Pandas", "Matplotlib", "Seaborn"],
-    github: "https://github.com/your-username/datadock-repo",
+    github: "https://github.com/meghanasingareddy/DataDock",
     live: "#",
   },
   {
@@ -39,7 +39,7 @@ const projectData: Project[] = [
     title: "Portfolio Website",
     description: "My personal portfolio site built with modern web technologies to showcase my skills and projects.",
     tech: ["Vite", "React", "TypeScript", "shadcn/ui"],
-    github: "https://github.com/meghana-codes-space/meghana-codes-space",
+    github: "https://github.com/meghanasingareddy/meghanasingareddy_portfolio",
     live: "https://meghanasingareddy.site",
   },
 ];
