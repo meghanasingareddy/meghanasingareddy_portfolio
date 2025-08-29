@@ -4,36 +4,33 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Core Programming",
       skills: [
+        { name: "JavaScript", level: 85, icon: "🚀" },
         { name: "Python", level: 90, icon: "🐍" },
-        { name: "Java", level: 85, icon: "☕" },
-        { name: "C", level: 80, icon: "⚡" },
-        { name: "JavaScript", level: 85, icon: "🚀" }
+        { name: "Java", level: 85, icon: "☕" }
       ]
     },
     {
       title: "Web Technologies",
       skills: [
-        { name: "HTML/CSS", level: 90, icon: "🎨" },
+        { name: "HTML", level: 90, icon: "🎨" },
+        { name: "CSS", level: 90, icon: "🎨" },
         { name: "React", level: 85, icon: "⚛️" },
-        { name: "Firebase", level: 80, icon: "🔥" },
-        { name: "Responsive Design", level: 85, icon: "📱" }
+        { name: "Tailwind", level: 80, icon: "💨" }
       ]
     },
     {
-      title: "Specialized Skills",
+      title: "Tools & Platforms",
       skills: [
-        { name: "Data Structures & Algorithms", level: 88, icon: "🧮" },
-        { name: "AI/ML", level: 75, icon: "🤖" },
-        { name: "Problem Solving", level: 92, icon: "🧩" },
-        { name: "Version Control (Git)", level: 80, icon: "📚" }
+        { name: "Git", level: 80, icon: "📚" },
+        { name: "GitHub", level: 85, icon: "🐙" }
       ]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-portfolio-card/30">
+    <section id="skills" className="py-20 section-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-portfolio-text-dark mb-6">

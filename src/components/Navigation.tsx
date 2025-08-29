@@ -18,9 +18,17 @@ const Navigation = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Portfolio", href: "#portfolio" },
+    { name: "Skills", href: "#skills" },
     { name: "Services", href: "#services" },
     { name: "Contact", href: "#contact" },
   ];
+
+  const handleSmoothScroll = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -39,7 +47,11 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="nav-link"
+                className="nav-link cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSmoothScroll(item.href);
+                }}
               >
                 {item.name}
               </a>
@@ -66,8 +78,12 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="nav-link text-center py-2"
-                  onClick={() => setIsOpen(false)}
+                  className="nav-link text-center py-2 cursor-pointer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    handleSmoothScroll(item.href);
+                  }}
                 >
                   {item.name}
                 </a>
