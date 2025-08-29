@@ -94,11 +94,11 @@ const Hero = () => {
             
             {/* Expertise Badge */}
             <div className="absolute -top-4 -right-4 bg-portfolio-card glass-card rounded-xl p-4">
-              <div className="text-sm text-portfolio-accent font-semibold">Expert on</div>
-              <div className="text-portfolio-text-dark font-bold">AI & Machine Learning</div>
+              <div className="text-sm text-portfolio-accent font-semibold">Passionate about</div>
+              <div className="text-portfolio-text-dark font-bold">Web Development & AI/ML</div>
               <div className="text-xs text-portfolio-text-muted mt-1">
-                Based in India<br />
-                I'm developer and<br />
+                B.Tech CSM Student<br />
+                Aspiring Fullstack Developer and<br />
                 UI/UX enthusiast.
               </div>
             </div>
