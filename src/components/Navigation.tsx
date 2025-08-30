@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,7 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? "bg-background/95 backdrop-blur-md border-b border-portfolio-border" : "bg-transparent"
+      scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"
     }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
@@ -56,6 +57,7 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
+            <ThemeToggle />
             <Button variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90">
               Let's Connect
             </Button>
@@ -63,7 +65,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-foreground"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -72,7 +74,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-portfolio-border">
+          <div className="md:hidden mt-4 py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
@@ -88,6 +90,9 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
+              <div className="flex justify-center my-4">
+                <ThemeToggle />
+              </div>
               <Button variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 mt-4">
                 Let's Connect
               </Button>

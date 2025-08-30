@@ -48,8 +48,8 @@ All colors MUST be HSL.
     --portfolio-border: 220 13% 91%;
     
     /* Modern gradient backgrounds */
-    --gradient-subtle: linear-gradient(135deg, 0 0% 98%, 210 40% 98%);
-    --gradient-light: linear-gradient(135deg, 220 27% 98%, 210 40% 96%);
+    --gradient-subtle: linear-gradient(135deg, hsl(220 27% 98%), hsl(210 40% 98%));
+    --gradient-light: linear-gradient(135deg, hsl(220 27% 98%), hsl(210 40% 96%));
 
     --sidebar-background: 0 0% 98%;
 
@@ -113,9 +113,8 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply text-foreground;
+    @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
-    background: var(--gradient-subtle);
     min-height: 100vh;
   }
 
