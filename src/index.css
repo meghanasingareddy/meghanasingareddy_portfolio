@@ -8,102 +8,105 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 27% 98%;
-    --foreground: 224 71% 4%;
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 224 71% 4%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71% 4%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 224 71% 4%;
-    --primary-foreground: 210 20% 98%;
+    --primary: 263 70% 50%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 9% 46%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
 
-    --accent: 220 14% 96%;
-    --accent-foreground: 224 71% 4%;
+    --accent: 189 94% 61%;
+    --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 20% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 224 71% 4%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 263 70% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom Portfolio Colors - Modern Light Theme */
-    --portfolio-light: 0 0% 100%;
-    --portfolio-accent: 219 100% 61%;
+    /* Custom Portfolio Colors - Dark Theme */
+    --portfolio-light: 0 0% 3.9%;
+    --portfolio-accent: 263 70% 50%;
     --portfolio-cyan: 189 94% 61%;
-    --portfolio-text-dark: 210 40% 8%;
-    --portfolio-text-muted: 210 15% 45%;
-    --portfolio-card: 220 14% 96%;
-    --portfolio-border: 220 13% 91%;
+    --portfolio-text-dark: 0 0% 98%;
+    --portfolio-text-muted: 0 0% 63.9%;
+    --portfolio-card: 0 0% 9%;
+    --portfolio-border: 0 0% 14.9%;
     
     /* Modern gradient backgrounds */
-    --gradient-subtle: linear-gradient(135deg, hsl(220 27% 98%), hsl(210 40% 98%));
-    --gradient-light: linear-gradient(135deg, hsl(220 27% 98%), hsl(210 40% 96%));
+    --gradient-subtle: linear-gradient(135deg, hsl(0 0% 3.9%), hsl(0 0% 7%));
+    --gradient-light: linear-gradient(135deg, hsl(0 0% 3.9%), hsl(0 0% 9%));
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-background: 0 0% 3.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 263 70% 50%;
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 0 0% 14.9%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 14.9%;
+    --sidebar-ring: 263 70% 50%;
   }
 
   .dark {
-    --background: 225 39% 5%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --card: 224 71% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 224 71% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 0 84% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 263 70% 50%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 215 27% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 215 27% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
 
     --accent: 189 94% 61%;
-    --accent-foreground: 225 39% 5%;
+    --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 215 27% 15%;
-    --input: 215 27% 15%;
-    --ring: 189 94% 61%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 263 70% 50%;
+
+    /* Custom Portfolio Colors - Dark Theme */
+    --portfolio-light: 0 0% 3.9%;
+    --portfolio-accent: 263 70% 50%;
+    --portfolio-cyan: 189 94% 61%;
+    --portfolio-text-dark: 0 0% 98%;
+    --portfolio-text-muted: 0 0% 63.9%;
+    --portfolio-card: 0 0% 9%;
+    --portfolio-border: 0 0% 14.9%;
+    
+    --sidebar-background: 0 0% 3.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 263 70% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 14.9%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 14.9%;
+    --sidebar-ring: 263 70% 50%;
   }
 }
 
@@ -133,7 +136,7 @@ All colors MUST be HSL.
   }
   
   .text-gradient {
-    background: linear-gradient(135deg, hsl(var(--portfolio-accent)), hsl(var(--portfolio-cyan)));
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -141,14 +144,14 @@ All colors MUST be HSL.
   
   .glass-card {
     /* Fallback for older browsers */
-    background: hsl(var(--portfolio-card));
+    background: hsl(var(--card));
     @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
-      background: hsl(var(--portfolio-card) / 0.8);
+      background: hsl(var(--card) / 0.8);
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
     }
-    border: 1px solid hsl(var(--portfolio-border));
-    box-shadow: 0 4px 16px hsl(var(--portfolio-accent) / 0.05);
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 4px 16px hsl(var(--primary) / 0.1);
   }
   
   .nav-link {
@@ -162,7 +165,7 @@ All colors MUST be HSL.
     height: 2px;
     bottom: -4px;
     left: 0;
-    background: hsl(var(--portfolio-accent));
+    background: hsl(var(--primary));
     transition: width 0.3s ease;
   }
   

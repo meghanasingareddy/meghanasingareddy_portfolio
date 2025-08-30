@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +56,6 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <ThemeToggle />
             <Button variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90">
               Let's Connect
             </Button>
@@ -90,9 +88,6 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="flex justify-center my-4">
-                <ThemeToggle />
-              </div>
               <Button variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 mt-4">
                 Let's Connect
               </Button>
