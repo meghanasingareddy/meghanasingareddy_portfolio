@@ -91,7 +91,7 @@ const Contact = () => {
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
-      href: "https://linkedin.com/in/singareddy-meghana-reddy-030527292",
+      href: "www.linkedin.com/in/meghana-reddy-singareddy-030527292",
       color: "hover:text-blue-500"
     },
     {
