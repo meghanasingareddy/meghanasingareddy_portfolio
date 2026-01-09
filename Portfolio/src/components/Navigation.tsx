@@ -18,8 +18,6 @@ const Navigation = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Portfolio", href: "#portfolio" },
-    { name: "Skills", href: "#skills" },
-    { name: "Services", href: "#services" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -37,7 +35,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold">
-            <span className="text-foreground">Meghana</span>
+            <span className="text-foreground">S Meghana Reddy</span>
             <span className="text-gradient">.</span>
           </div>
 
@@ -56,8 +54,8 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Let's Connect
+            <Button asChild variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <a href="#contact">Let's Connect</a>
             </Button>
           </div>
 
@@ -88,8 +86,8 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 mt-4">
-                Let's Connect
+              <Button asChild variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 mt-4">
+                <a href="#contact">Let's Connect</a>
               </Button>
             </div>
           </div>

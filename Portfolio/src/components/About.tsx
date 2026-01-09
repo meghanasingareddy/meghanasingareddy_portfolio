@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: <Code className="w-6 h-6" />,
       title: "Development",
-      description: "Full-Stack Web Development & Mobile Apps"
+      description: "Java, Python, and modern web technologies"
     },
     {
       icon: <Zap className="w-6 h-6" />,
@@ -24,6 +24,13 @@ const About = () => {
       description: "Data Structures & Algorithms Enthusiast"
     }
   ];
+
+  const skills = {
+    "Programming Languages": ["Java", "Python"],
+    "Web Technologies": ["HTML", "CSS", "JavaScript", "React"],
+    "AI / Data": ["Machine Learning fundamentals", "Data Analysis", "Pandas", "NumPy"],
+    "Tools & Platforms": ["Git", "GitHub"]
+  };
 
   return (
     <section id="about" className="py-20 bg-background">
@@ -37,19 +44,16 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  I'm Singareddy Meghana Reddy, a passionate B.Tech Computer Science student specializing in 
-                  Artificial Intelligence and Machine Learning. Currently in my 2nd year, I'm driven by a 
-                  deep curiosity for technology and its potential to solve real-world problems.
+                  I'm S Meghana Reddy, a B.Tech Computer Science student specializing in
+                  Artificial Intelligence and Machine Learning. Analytical, curious, and impact-driven, 
+                  I have a strong interest in Machine Learning, Data Analytics, and problem-solving.
                 </p>
                 <p>
-                  My journey combines academic excellence with hands-on experience in web development, 
-                  mobile app creation, and algorithm design. I believe in learning by building, which is 
-                  why I've worked on diverse projects ranging from finance management apps to collaborative 
-                  study platforms.
+                  My journey combines academic learning with hands-on experience on real-world projects.
+                  I am comfortable working with Java, Python, and modern web technologies.
                 </p>
                 <p>
-                  When I'm not coding, I'm exploring new AI/ML concepts, solving DSA problems on LeetCode, 
-                  or working on innovative projects that bridge the gap between technology and user experience.
+                  My clear career goal is to become an AI/ML Engineer or a Data Analyst.
                 </p>
               </div>
             </div>
@@ -62,7 +66,7 @@ const About = () => {
                 <span className="text-accent-foreground font-medium">AI Enthusiast</span>
               </div>
               <div className="px-4 py-2 bg-secondary rounded-full border border-border">
-                <span className="text-secondary-foreground font-medium">Full-Stack Developer</span>
+                <span className="text-secondary-foreground font-medium">Data-Driven</span>
               </div>
             </div>
           </div>
@@ -95,14 +99,21 @@ const About = () => {
         {/* Skills Section */}
         <div className="mt-16 pt-16 border-t border-border">
           <h3 className="text-2xl font-bold text-center text-foreground mb-8">Technical Skills</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {["Python", "Java", "JavaScript", "React", "Firebase", "HTML/CSS", "C", "Arduino", "ESP32", "Git/GitHub", "DSA", "AI/ML"].map((skill, index) => (
-              <div 
-                key={index}
-                className="text-center p-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors group"
-              >
-                <div className="font-medium text-foreground group-hover:text-primary transition-colors">
-                  {skill}
+          <div className="space-y-8">
+            {Object.entries(skills).map(([category, skillList]) => (
+              <div key={category}>
+                <h4 className="text-lg font-semibold text-center text-primary mb-4">{category}</h4>
+                <div className="flex flex-wrap justify-center gap-4">
+                  {skillList.map((skill, index) => (
+                    <div 
+                      key={index}
+                      className="text-center py-2 px-4 rounded-lg bg-card border border-border hover:border-primary/50 transition-colors group"
+                    >
+                      <div className="font-medium text-foreground group-hover:text-primary transition-colors">
+                        {skill}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}

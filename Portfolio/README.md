@@ -54,16 +54,4 @@ Tailwind CSS
 
 Deployment
 
-You can deploy the project using standard deployment services such as:
-
-Vercel
-
-Netlify
-
-GitHub Pages
-
-Or any custom hosting service
-
-Custom Domain
-
 The site is already hosted on a custom domain: meghanasingareddy.site

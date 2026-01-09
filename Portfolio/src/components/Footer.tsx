@@ -1,26 +1,16 @@
-import { Github, Linkedin, Instagram, ExternalLink } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/singareddy-meghana-reddy-030527292",
+      url: "https://www.linkedin.com/in/meghana-reddy-singareddy-030527292/",
       icon: Linkedin
     },
     {
       name: "GitHub", 
       url: "https://github.com/meghanasingareddy",
       icon: Github
-    },
-    {
-      name: "LeetCode",
-      url: "https://leetcode.com/meghanasingareddy",
-      icon: ExternalLink
-    },
-    {
-      name: "Instagram",
-      url: "https://instagram.com/meghanasingareddy",
-      icon: Instagram
     }
   ];
 
@@ -31,11 +21,11 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span className="text-portfolio-text-dark">Meghana</span>
+              <span className="text-portfolio-text-dark">S Meghana Reddy</span>
               <span className="text-gradient">.</span>
             </div>
             <p className="text-portfolio-text-muted max-w-sm">
-              Passionate developer specializing in AI/ML, web development, and innovative technology solutions.
+              AI/ML Engineer & Data Analyst. Building intelligent, data-driven solutions.
             </p>
           </div>
 
@@ -43,7 +33,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-portfolio-text-dark mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {["Home", "About", "Portfolio", "Skills", "Services", "Contact"].map((item) => (
+              {["Home", "About", "Portfolio", "Skills", "Contact"].map((item) => (
                 <li key={item}>
                   <a 
                     href={`#${item.toLowerCase()}`}
@@ -82,7 +72,7 @@ const Footer = () => {
 
         <div className="border-t border-portfolio-border mt-8 pt-8 text-center">
           <p className="text-portfolio-text-muted">
-            © 2025 Meghana Reddy. All rights reserved.
+            © 2025 S Meghana Reddy. All rights reserved.
           </p>
         </div>
       </div>

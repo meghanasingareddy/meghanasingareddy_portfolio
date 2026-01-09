@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Send, Github, Linkedin, Instagram, ExternalLink } from "lucide-react";
+import { Mail, MapPin, Briefcase, Users, Send, Github, Linkedin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -80,8 +80,14 @@ const Contact = () => {
       href: null
     },
     {
-      icon: <Phone className="w-5 h-5" />,
-      title: "Let's Connect",
+      icon: <Briefcase className="w-5 h-5" />,
+      title: "Internships",
+      content: "Open to opportunities",
+      href: null
+    },
+    {
+      icon: <Users className="w-5 h-5" />,
+      title: "Collaboration",
       content: "Available for projects",
       href: null
     }
@@ -91,7 +97,11 @@ const Contact = () => {
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
+<<<<<<< HEAD
       href: "www.linkedin.com/in/meghana-reddy-singareddy-030527292",
+=======
+      href: "https://www.linkedin.com/in/meghana-reddy-singareddy-030527292/",
+>>>>>>> 96d5ed4 (Updation)
       color: "hover:text-blue-500"
     },
     {
@@ -99,18 +109,6 @@ const Contact = () => {
       icon: <Github className="w-5 h-5" />,
       href: "https://github.com/meghanasingareddy",
       color: "hover:text-gray-400"
-    },
-    {
-      name: "LeetCode",
-      icon: <ExternalLink className="w-5 h-5" />,
-      href: "https://leetcode.com/meghanasingareddy",
-      color: "hover:text-yellow-500"
-    },
-    {
-      name: "Instagram - Meghana",
-      icon: <Instagram className="w-5 h-5" />,
-      href: "https://instagram.com/meghanasingareddy",
-      color: "hover:text-pink-500"
     },
   ];
 
@@ -122,7 +120,7 @@ const Contact = () => {
             Let's <span className="text-gradient">Connect</span>
           </h2>
           <p className="text-xl text-portfolio-text-muted max-w-2xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss how we can work together to create something amazing.
+            I'm actively seeking new opportunities. Let's discuss how I can contribute to your team.
           </p>
         </div>
 
@@ -249,11 +247,11 @@ const Contact = () => {
                     <div className="text-sm text-portfolio-text-muted">Projects Completed</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-gradient">1+</div>
+                    <div className="text-2xl font-bold text-gradient">1.5+</div>
                     <div className="text-sm text-portfolio-text-muted">Years Learning</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-gradient">100+</div>
+                    <div className="text-2xl font-bold text-gradient">125+</div>
                     <div className="text-sm text-portfolio-text-muted">DSA Problems Solved</div>
                   </div>
                   <div>
