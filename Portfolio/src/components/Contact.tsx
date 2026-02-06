@@ -93,24 +93,21 @@ const Contact = () => {
     }
   ];
 
-  const socialLinks = [
-    {
-      name: "LinkedIn",
-      icon: <Linkedin className="w-5 h-5" />,
-<<<<<<< HEAD
-      href: "www.linkedin.com/in/meghana-reddy-singareddy-030527292",
-=======
-      href: "https://www.linkedin.com/in/meghana-reddy-singareddy-030527292/",
->>>>>>> 96d5ed4 (Updation)
-      color: "hover:text-blue-500"
-    },
-    {
-      name: "GitHub",
-      icon: <Github className="w-5 h-5" />,
-      href: "https://github.com/meghanasingareddy",
-      color: "hover:text-gray-400"
-    },
-  ];
+const socialLinks = [
+  {
+    name: "LinkedIn",
+    icon: <Linkedin className="w-5 h-5" />,
+    href: "https://www.linkedin.com/in/meghana-reddy-singareddy-030527292/",
+    color: "hover:text-blue-500"
+  },
+  {
+    name: "GitHub",
+    icon: <Github className="w-5 h-5" />,
+    href: "https://github.com/meghanasingareddy",
+    color: "hover:text-gray-400"
+  },
+];
+
 
   return (
     <section id="contact" className="py-20 hero-gradient">
