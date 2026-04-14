@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: <GraduationCap className="w-6 h-6" />,
       title: "Education",
-      description: "B.Tech CSE (AI/ML) • 2nd Year • Started 2024"
+      description: "B.Tech CSE (AI/ML) • 3rd Year • Started 2024"
     },
     {
       icon: <Brain className="w-6 h-6" />,
@@ -44,16 +44,13 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  I'm S Meghana Reddy, a B.Tech Computer Science student specializing in
-                  Artificial Intelligence and Machine Learning. Analytical, curious, and impact-driven, 
-                  I have a strong interest in Machine Learning, Data Analytics, and problem-solving.
+                  I'm Singareddy Meghana Reddy, a B.Tech CSM student focused on AI/ML, data analytics, full-stack development, and system design.
                 </p>
                 <p>
-                  My journey combines academic learning with hands-on experience on real-world projects.
-                  I am comfortable working with Java, Python, and modern web technologies.
+                  I enjoy turning ideas into intelligent, scalable solutions through real-world projects.
                 </p>
                 <p>
-                  My clear career goal is to become an AI/ML Engineer or a Data Analyst.
+                  Comfortable with Java, Python, and modern web technologies, I’m working towards becoming an AI/ML Engineer or Data Analyst.
                 </p>
               </div>
             </div>

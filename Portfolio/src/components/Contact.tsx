@@ -240,15 +240,15 @@ const socialLinks = [
                 <h4 className="text-portfolio-text-light font-semibold mb-4">Quick Stats</h4>
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
-                    <div className="text-2xl font-bold text-gradient">4+</div>
+                    <div className="text-2xl font-bold text-gradient">6+</div>
                     <div className="text-sm text-portfolio-text-muted">Projects Completed</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-gradient">1.5+</div>
+                    <div className="text-2xl font-bold text-gradient">2+</div>
                     <div className="text-sm text-portfolio-text-muted">Years Learning</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-gradient">125+</div>
+                    <div className="text-2xl font-bold text-gradient">215+</div>
                     <div className="text-sm text-portfolio-text-muted">DSA Problems Solved</div>
                   </div>
                   <div>

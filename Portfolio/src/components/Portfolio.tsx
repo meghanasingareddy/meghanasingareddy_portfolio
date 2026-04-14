@@ -6,21 +6,27 @@ import { Github } from "lucide-react";
 const Portfolio = () => {
   const projects = [
     {
-      title: "Clearoute",
-      description: "A problem-solving focused project designed to build logical and efficient solutions, emphasizing algorithmic thinking, structured workflows, and optimization strategies.",
-      technologies: ["Python", "Data Structures", "Algorithms"],
+      title: "SecureFL Guard",
+      description: "A centralized ML-based intrusion detection system for federated learning in IIoT, designed to identify Sybil-based collusion attacks by analyzing network traffic patterns and preventing malicious model poisoning.",
+      technologies: ["Python", "Machine Learning", "Django", "Network Security"],
+      github: "https://github.com/meghanasingareddy/SCA-Sybil-based-Collusion-Attacks",
+    },
+    {
+      title: "CleaRoute",
+      description: "An AI-based pothole detection system built using YOLOv8 for real-time object detection. Implemented video preprocessing, dataset annotation, model training, and evaluation pipelines, applying computer vision techniques for accurate detection and optimization.",
+      technologies: ["Python", "Computer Vision", "Machine Learning", "YOLOv8"],
       github: "https://github.com/meghanasingareddy/Clearoute",
     },
     {
       title: "Chatridge",
-      description: "A conversational web application built to enable structured and interactive communication, focusing on frontend logic, state handling, and user experience.",
-      technologies: ["React", "JavaScript / TypeScript", "Web Technologies"],
+      description: "An offline peer-to-peer messaging application enabling real-time communication without internet connectivity. Built a mobile-based system for seamless message exchange using local connectivity.",
+      technologies: ["Flutter", "Mobile Development", "Real-Time Communication"],
       github: "https://github.com/meghanasingareddy/Chatridge",
     },
     {
       title: "NeuroVoice",
-      description: "An AI-based project exploring voice intelligence, involving audio feature extraction, pattern recognition, and machine learning concepts applied to speech data.",
-      technologies: ["Python", "Machine Learning", "Audio Processing"],
+      description: "A brain–computer interface system that converts EEG signals into text and audio output. Applied machine learning models for pattern recognition on EEG data and integrated signal processing techniques for reliable interpretation.",
+      technologies: ["Python", "Machine Learning", "EEG Signal Processing", "Speech Processing"],
       github: "https://github.com/meghanasingareddy/NeuroVoice",
     },
     {
@@ -28,12 +34,6 @@ const Portfolio = () => {
       description: "An AI-focused mental wellness application that provides a safe space for users to express emotions and receive intelligent support through a thoughtfully designed interface.",
       technologies: ["React", "TypeScript", "Vite", "Supabase", "AI"],
       github: "https://github.com/meghanasingareddy/MindMate",
-    },
-    {
-      title: "ExpenseFlow",
-      description: "A personal expense management application designed to track, organize, and analyze daily expenses, focusing on usability and clean data handling.",
-      technologies: ["Web Technologies", "JavaScript", "Data Handling"],
-      github: "https://github.com/meghanasingareddy/ExpenseFlow",
     },
     {
       title: "Virtual Study Group Platform",

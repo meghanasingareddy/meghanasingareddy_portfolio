@@ -83,16 +83,21 @@ const Hero = () => {
             {/* Expertise Badge */}
             <div className="absolute -top-4 -right-4 bg-card glass-card rounded-xl p-4">
               <div className="text-sm text-primary font-semibold">Passionate about</div>
-              <div className="text-foreground font-bold">AI/ML & Data</div>
+              <div className="text-foreground font-bold">
+                AI/ML, Data Analytics & <br/>
+                Web Development Enthusiast
+              </div>
               <div className="text-xs text-muted-foreground mt-1">
-                B.Tech CSM Student
+                B.Tech CSM Student <br/>
+                Aspiring AI/ML Engineer <br/>
+                & Data Analyst
               </div>
             </div>
 
             {/* Info Card */}
             <div className="absolute -bottom-6 left-4 bg-card glass-card rounded-xl p-6 max-w-xs">
               <div className="text-foreground font-semibold mb-2">
-                Looking for an AI/ML Engineer or Data Analyst? Let's connect!
+                Turning ideas into intelligent, scalable, and meaningful solutions with AI/ML and web technologies—let’s collaborate.
               </div>
               <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 mt-3">
                 <a href="mailto:meghanasingareddy@gmail.com">Let's Chat</a>

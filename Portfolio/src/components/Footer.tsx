@@ -72,7 +72,7 @@ const Footer = () => {
 
         <div className="border-t border-portfolio-border mt-8 pt-8 text-center">
           <p className="text-portfolio-text-muted">
-            © 2025 S Meghana Reddy. All rights reserved.
+            © 2026 S Meghana Reddy. All rights reserved.
           </p>
         </div>
       </div>
