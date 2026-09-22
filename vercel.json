@@ -1,5 +1,6 @@
 {
-  "buildCommand": "cd Portfolio && npm install && npm run build",
+  "installCommand": "cd Portfolio && npm install",
+  "buildCommand": "cd Portfolio && npm run build",
   "outputDirectory": "Portfolio/dist",
   "rewrites": [
     {
