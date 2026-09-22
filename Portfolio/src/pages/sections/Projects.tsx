@@ -33,7 +33,7 @@ const projectData: Project[] = [
     description: "My personal portfolio site built with modern web technologies to showcase my skills and projects.",
     tech: ["Vite", "React", "TypeScript", "shadcn/ui"],
     github: "https://github.com/meghana-codes-space/meghana-codes-space",
-    live: "https://meghanasingareddy.site",
+    live: "#",
   },
 ];
 

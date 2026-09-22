@@ -1,8 +1,6 @@
 Meghana Singareddy Portfolio
 Project Info
 
-Live Site: https://meghanasingareddy.site
-
 This is my personal portfolio website showcasing my projects, skills, and learning journey in web development and programming.
 
 How to Edit This Project
@@ -50,8 +48,4 @@ React
 
 shadcn-ui
 
-Tailwind CSS
-
-Deployment
-
-The site is already hosted on a custom domain: meghanasingareddy.site
+Tailwind CSS
