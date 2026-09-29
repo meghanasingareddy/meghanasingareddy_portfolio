@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
   { label: "Work", href: "#projects" },
@@ -51,7 +52,8 @@ const Navigation = () => {
             MEGHANA<span>.</span>
           </a>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-8">
             <div className="nav-links">
               {navItems.map((item) => (
                 <a
@@ -82,16 +84,18 @@ const Navigation = () => {
                 LeetCode ↗
               </a>
             </div>
-          </div>
+            </div>
 
-          <button
-            className="md:hidden p-2 text-foreground"
-            onClick={() => setMenuOpen(true)}
-            aria-label="Open menu"
-            style={{ cursor: "none", background: "none", border: "none" }}
-          >
-            <Menu size={24} />
-          </button>
+            <ThemeToggle />
+            <button
+              className="md:hidden p-2 text-foreground"
+              onClick={() => setMenuOpen(true)}
+              aria-label="Open menu"
+              style={{ cursor: "none", background: "none", border: "none" }}
+            >
+              <Menu size={24} />
+            </button>
+          </div>
         </div>
       </nav>
 

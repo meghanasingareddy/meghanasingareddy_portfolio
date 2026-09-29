@@ -46,6 +46,19 @@ export const Hero = () => {
     }
 
     let animationId: number;
+    const gridStroke = { current: "rgba(255, 255, 255, 0.04)" };
+    const readGridStroke = () => {
+      const value = getComputedStyle(document.documentElement)
+        .getPropertyValue("--grid-line")
+        .trim();
+      gridStroke.current = value || "rgba(255, 255, 255, 0.04)";
+    };
+    readGridStroke();
+    const themeObserver = new MutationObserver(readGridStroke);
+    themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
     
     const render = () => {
       ctx.clearRect(0, 0, width, height);
@@ -84,7 +97,7 @@ export const Hero = () => {
       }
       
       // Draw grid
-      ctx.strokeStyle = "rgba(255, 255, 255, 0.04)";
+      ctx.strokeStyle = gridStroke.current;
       ctx.lineWidth = 1;
       
       for (let i = 0; i < cols; i++) {
@@ -135,6 +148,7 @@ export const Hero = () => {
 
     return () => {
       cancelAnimationFrame(animationId);
+      themeObserver.disconnect();
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mouseleave", handleMouseLeave);
       window.removeEventListener("resize", handleResize);
