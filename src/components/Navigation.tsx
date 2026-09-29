@@ -1,99 +1,153 @@
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
+const navItems = [
+  { label: "Work", href: "#projects" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
+];
+
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [active, setActive] = useState("");
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Contact", href: "#contact" },
-  ];
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id], div[id='home']");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActive(`#${e.target.id}`);
+        });
+      },
+      { rootMargin: "-40% 0px -40% 0px" }
+    );
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+  }, []);
 
-  const handleSmoothScroll = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const scrollTo = (href: string) => {
+    const el = document.querySelector(href);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    setMenuOpen(false);
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"
-    }`}>
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold">
-            <span className="text-foreground">S Meghana Reddy</span>
-            <span className="text-gradient">.</span>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="nav-link cursor-pointer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSmoothScroll(item.href);
-                }}
-              >
-                {item.name}
-              </a>
-            ))}
-            <Button asChild variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <a href="#contact">Let's Connect</a>
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-foreground"
-            onClick={() => setIsOpen(!isOpen)}
+    <>
+      <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
+        <div className="nav-inner">
+          <a
+            href="#home"
+            className="nav-logo"
+            onClick={(e) => { e.preventDefault(); scrollTo("#home"); }}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+            MEGHANA<span>.</span>
+          </a>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border">
-            <div className="flex flex-col space-y-4">
+          <div className="hidden md:flex items-center gap-8">
+            <div className="nav-links">
               {navItems.map((item) => (
                 <a
-                  key={item.name}
+                  key={item.label}
                   href={item.href}
-                  className="nav-link text-center py-2 cursor-pointer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsOpen(false);
-                    handleSmoothScroll(item.href);
-                  }}
+                  className={`nav-link ${active === item.href ? "active" : ""}`}
+                  onClick={(e) => { e.preventDefault(); scrollTo(item.href); }}
                 >
-                  {item.name}
+                  {item.label}
                 </a>
               ))}
-              <Button asChild variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 mt-4">
-                <a href="#contact">Let's Connect</a>
-              </Button>
+            </div>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://github.com/meghanasingareddy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-cta"
+              >
+                GitHub ↗
+              </a>
+              <a
+                href="https://leetcode.com/u/meghanasingareddy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-cta"
+              >
+                LeetCode ↗
+              </a>
             </div>
           </div>
-        )}
-      </div>
-    </nav>
+
+          <button
+            className="md:hidden p-2 text-foreground"
+            onClick={() => setMenuOpen(true)}
+            aria-label="Open menu"
+            style={{ cursor: "none", background: "none", border: "none" }}
+          >
+            <Menu size={24} />
+          </button>
+        </div>
+      </nav>
+
+      {menuOpen && (
+        <div className="mob-menu">
+          <button
+            className="absolute top-6 right-6 text-foreground"
+            onClick={() => setMenuOpen(false)}
+            aria-label="Close menu"
+            style={{ cursor: "none", background: "none", border: "none" }}
+          >
+            <X size={32} />
+          </button>
+
+          <div className="flex flex-col gap-6">
+            {navItems.map((item, i) => (
+              <button
+                key={item.label}
+                className="mob-nav-item"
+                style={{ animationDelay: `${i * 0.05}s` }}
+                onClick={() => scrollTo(item.href)}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+
+          <div className="mt-16 flex flex-wrap gap-6">
+            <a
+              href="https://github.com/meghanasingareddy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+            >
+              GitHub ↗
+            </a>
+            <a
+              href="https://leetcode.com/u/meghanasingareddy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+            >
+              LeetCode ↗
+            </a>
+            <a
+              href="https://www.linkedin.com/in/meghana-reddy-singareddy-030527292/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+            >
+              LinkedIn ↗
+            </a>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
